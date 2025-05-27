@@ -1,0 +1,91 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page</title>
+  <link rel="stylesheet" href="wep.css">
+</head>
+<body>
+  <div class="container" id="loginContainer">
+    <h2>Login</h2>
+    <h3> Hello brother wellcome to my webpage </h3>
+    <form onsubmit="showHomePage(event)">
+      <input type="text" placeholder="Username" required />
+      <input type="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form>
+    <dve class="link-container">
+      <a href="https://www.facebook.com/yinmar172/"> My Facebook Account </a>
+      <a href="https://www.tiktok.com/@aye46.0?_t=ZS-8wh8KwpP5Rx&_r=1"> My TikTok Account </a>
+    </dve>
+    <div class="links">
+      <a onclick="showForgotPassword()">Forgot Password?</a>
+      <a onclick="showRegister()">Create New Account</a>
+    </div>
+  </div>
+
+  <div class="container" id="forgotContainer" style="display:none">
+    <h2>Forgot Password</h2>
+    <form>
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit">Submit</button>
+    </form>
+    <div class="links">
+      <a onclick="goBack()">Back to Login</a>
+    </div>
+  </div>
+
+  <div class="container" id="registerContainer" style="display:none">
+    <h2>Register</h2>
+    <form>
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      <button type="submit">Create Account</button>
+    </form>
+    <div class="links">
+      <a onclick="goBack()">Back to Login</a>
+    </div>
+  </div>
+
+  <div class="container" id="homeContainer" style="display:none">
+    <h2>  Welcome! to my webpage </h2>
+    <p>You are logged in successfully.</p>
+    <h1></h1>
+    <p>ကျနော်မှာ မယဉ်မာအေး ဆိုတဲ့ အမျိုးသမီးလေ တစ်ယောက်ပဲ ရှိတဲ့ အတွက် ဆုံးရှုံးရမှာကြောက်တယ်
+    ကျနော် ကောင်မလေးနဲ့ မပါတ်သက်ဘဲ နေပေးပါလာဗျ (တောင်ဆိုးတာပါ)
+    brother သူနဲ့ ချစ်သူဖြစ်တုံးကလဲ ကျနော် မနှောက်ရှက်ခဲ့ပါဘူး အခု ကျနော်နဲ့ ချစ်သူဖြစ်နေပြီးဆိုတော့
+    အသိစိတ်လေနဲ့ နေပေးပါဗျာ....</p>
+    <h5>#Naye</h5>
+
+    <button onclick="showPhotos()">Show Photos</button>
+
+    <div class="links">
+      <a onclick="goBack()">Logout</a>
+    </div>
+  </div>
+
+  <div class="container" id="photoGallery" style="display:none">
+    <h2>My Photo Gallery</h2>
+    <div class="gallery">
+    <img src="1218155751.jpg" onclick="openLightbox(this.src)" />
+    <img src="2111433035.jpg" onclick="openLightbox(this.src)" />
+    <img src="997072.jpg" onclick="openLightbox(this.src)" />
+    <img src="165001.jpg" onclick="openLightbox(this.src)" />
+</div>
+<div id="lightbox" style="display:none" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" />
+</div>
+
+  </div>
+    <div class="links">
+      <a onclick="goBackToHome()">Back</a>
+    </div>
+  </div>
+  <p> အသံနာထောင်ရန် </p>
+<audio controls>
+  <source src="1111.mp3" type="audio/mpeg"
+</audio>
+  <script src="wep.js"></script>
+</body>
+</html>
